@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+   <meta charset="UTF-8">
+   <title>Game Console Survey</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+   <header>  
+      <h1 id="title">Gaming Consoles</h1>
+   </header>
+
+   <main>
+      <p id = "description">Which consoles do you own?</p>
+      <form id="survey-form">
+         <p>
+            <label id="name-label" for="name">Name: </label>
+            <input id= "name" type="text" placeholder = "Enter your Name" required>
+         </p>
+
+         <p>
+            <label id = "email-label" for="email">Email: </label>
+            <input id = "email" type="email" placeholder = "Enter your Email" required>
+         </p>
+
+         <p>
+            <label id="number-label" for="number"> Number of consoles: </label>
+            <input id = "number" type="number" min="0" max="100" placeholder="0-100" required>
+         </p>
+
+         <p>
+            <label for="dropdown">My consoles are from: </label>
+            <select id="dropdown">
+               <option value = "Playstation">Playstation</option>
+               <option value = "Xbox">Xbox</option>
+               <option value = "Nintendo">Nintendo</option>
+               <option value = "PC">PC</option>
+               <option value = "Other">Other</option>
+            </select>
+         </p>
+
+         <p>How often do you play your console per day? </p>
+             <label><input type = "radio" name= "timeplayed" value="1hour"> 1 Hour</label>
+            <label><input type = "radio" name= "timeplayed" value="2hour"> 2 Hours</label>
+            <label><input type = "radio" name= "timeplayed" value="3hour"> 3 Hours</label>
+            <label><input type = "radio" name= "timeplayed" value="4hourPlus"> 4 or More Hours</label>
+         <p> I play mainly: </p>
+               <input type="checkbox" id="Playstation" value="Playstation" checked>
+					<label for="Playstation">Playstation</label><br>
+					<input type="checkbox" id="Xbox" value="Xbox">
+					<label for="Xbox">Xbox</label><br>
+					<input type="checkbox" id="Nintendo" value="Nintendo">
+               <label for="Nintendo">Nintendo</label>
+               <input type="checkbox" id="PC" value="PC">
+               <label for="PC">PC</label>
+               <input type="checkbox" id="Other" value="Other">
+					<label for ="Other">Other</label>
+				<p>
+					<label for = "textarea">If Other, please describe. Also, what is your favorite console?</label><br>
+					<textarea id="textarea"></textarea>
+				</p>
+				<button id="submit" type="submit">Submit</button>
+      </form>
+   </main>
+   
+</body>
+<footer>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</footer>
+</html>
