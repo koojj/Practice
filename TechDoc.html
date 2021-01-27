@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Learn HTML</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style type="text/css">
+      #navbar {
+      position:fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(99, 99, 90, 0);
+      color: white;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif'
+      padding: 1em;
+      width: 280px;
+   }
+
+   .flex-container  {
+  display: flex;
+} 
+
+@media 
+   (min-device-width: 1200px) 
+  and (max-device-width: 1600px)
+{
+
+</style>
+
+<body>
+   <nav id = "navbar">
+      <header><h1>HTML</h1></header>
+      <a href="#introduction" class="nav-link">Introduction</a>
+      <a href="#comments" class="nav-link">Comments</a>
+      <a href="#variables" class="nav-link">Variables</a>
+      <a href="#methods" class="nav-link">Methods</a>
+      <a href="#arrays_and_hashes" class="nav-link">Arrays and Hashes</a>
+   </nav>
+
+   <main id="main-doc">
+      <section class="main-section" id="introduction">
+         <header><h2>Introduction</h2></header>
+         <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+         <p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            <a href="https://google.com">google</a>),
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+         </p>
+      </section>
+      <section class="main-section" id="comments">
+         <header><h2>Comments</h2></header>
+         <p>
+            There are a couple ways to comment your code in Ruby.
+         </p>
+         <ol>
+            <li>Single-Line:
+               <br>
+               <div class="code-block">
+                  <code>
+                     #  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                  </code>
+               </div>
+            </li>
+            <li>
+               Multi-Line:
+               <br>
+               <div class="code-block">
+                  <code>
+                     # A  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas..<br>
+                     #  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br>
+                     #  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                  </code>
+               </div>
+            </li>
+            <li>Block Comment:
+               <br>
+               <div class="code-block">
+                  <code>
+                     =begin<br>
+                     &nbsp;&nbsp; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.s<br>
+                     &nbsp;&nbsp; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.<br>
+                     &nbsp;&nbsp; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."<br>
+                     =end
+                  </code>
+               </div>
+            </li>
+         </ol>
+         <p>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+         </p>
+      </section>
+      <section class="main-section" id="variables">
+         <header><h2>Variables</h2></header>
+         <p>
+            Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.
+         </p>
+         <p>
+            Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.
+         </p>
+         <div class="code-block">
+            <code>
+               Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat..<br>
+               
+            </code>
+         </div>
+         <p>
+            Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.
+         </p>
+         <div class="code-block">
+            <code>
+               Aliquam erat volutpat."<br>
+               Aliquam erat volutpat."
+            </code>
+         </div>
+      </section>
+      <section class="main-section" id="methods">
+         <header><h2>Methods</h2></header>
+         <p>
+            Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.
+         </p>
+         <p>
+            Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat.<code>&nbsp;def </code>, Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. <code>&nbsp;end </code>.
+         </p>
+         <div class="code-block">
+            <code>
+               def say_hello<br>
+               &nbsp;&nbsp;puts "Hello World"<br>
+               end
+            </code>
+         </div>
+         <p>
+            To invoke a method, simply say the method's name.
+         </p>
+         <div class="code-block">
+            <code>
+               # Let's invoke our previous method.<br>
+               say_hello<br>
+               => "Hello World"
+            </code>
+         </div>
+      </section>
+      <section class="main-section" id="arrays_and_hashes">
+         <header><h2>Arrays and Hashes</h2></header>
+         <p>
+            Two common data structures in Ruby are arrays and hashes.
+            Both...
+         </p>
+         <ul>
+            <li>
+               allow you to store multiple multiple data points in one location.
+            </li>
+            <li>
+               can contain any type of data, including other arrays and hashes
+            </li>
+            <li>
+               can be looped or iterated through with various helper methods
+            </li>
+         </ul>
+         <p>
+            Let's look at an array:
+         </p>
+         <div class="code-block">
+            <code>
+               # An array is surrounded by square brackets.<br>
+               # Each element is separated by a comma.<br>
+               [ "This", "is", "an", "array", 1, true, false ]
+            </code>
+         </div>
+         <p>
+            Let's look at a hash:
+         </p>
+         <div class="code-block">
+            <code>
+               # An array is surrounded by curly brackets.<br>
+               # Data is stored in key: value pairs.<br>
+               # These pairs are separated by commas.<br>
+               {<br>
+               &nbsp;&nbsp;key: value,<br>
+               &nbsp;&nbsp;key_with_array_value: ["another", "array"],<br>
+               &nbsp;&nbsp;yet_another_key: 12345,<br>
+               &nbsp;&nbsp;key_with_boolean: false<br>
+               }
+            </code>
+         </div>
+      </section>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
